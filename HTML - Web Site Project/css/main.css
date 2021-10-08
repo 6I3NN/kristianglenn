@@ -1,0 +1,275 @@
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .menu-icon {
+  cursor: pointer;
+  margin-top: 1.8em;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: .3em;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.primary-cta {
+  background: #007af3;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.watch-video-cta {
+  display: block;
+  margin: 1em 0 0 0;
+}
+
+.watch-video-icon {
+  height: 25px;
+  margin-top: 1em;
+  margin-right: .5em;
+}
+
+.hero-img {
+  margin-top: 2em;
+}
+
+.qoutes-section {
+  background: #007af3;
+  color: white;
+}
+
+.qoutes-section li {
+  background: #006bd6;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+.qoutes-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #006bd6;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.last-part {
+  background: #494646;
+  color: white;
+}
+
+.last-part .Dame {
+  letter-spacing: 0.2em;
+  font-size: 1em;
+}
+
+.last-part p {
+  font-size: .7em;
+}
+
+.last-part h2 {
+  font-size: 1em;
+}
+
+nav.menu-icon {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 40%;
+  opacity: 50%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1100px) {
+  .menu-icon, .x-menu-icon {
+    display: none;
+  }
+  .navbar.container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.5em;
+    padding: 1.5em 1em;
+  }
+  .navbar nav .current {
+    margin-left: 5em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+}
+
+.current {
+  font-weight: bold;
+}
+
+.html-cta {
+  background: blue;
+  color: white;
+  border-radius: 5em;
+  text-decoration: none;
+  padding: 0;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.html-cta span {
+  color: white;
+}
+
+.Zuckerberg {
+  color: white;
+  text-decoration: none;
+}
+
+.Hawking {
+  color: white;
+  text-decoration: none;
+}
+
+.Jobs {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    width: 1080px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 40%;
+    margin-right: 7em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1.5em;
+    margin-top: 1.5em;
+  }
+  .qoutes-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .qoutes-section ul li {
+    margin: 0 1.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
